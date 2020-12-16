@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,150 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stepper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="egg" translatesAutoresizingMaskIntoConstraints="NO" id="mcE-Cj-iKP">
+                                <rect key="frame" x="36" y="120" width="342" height="342"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mcE-Cj-iKP" secondAttribute="height" multiplier="1:1" id="TNM-Hq-cfA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Status: Egg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YT4-a6-Spi">
+                                <rect key="frame" x="135.5" y="74" width="143.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="51G-UL-Bgi">
+                                <rect key="frame" x="50" y="512" width="314" height="146"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dGi-kh-YKM">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="32"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="普通飼料" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gt-Z9-HXG">
+                                                <rect key="frame" x="0.0" y="0.0" width="189.5" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="nc2-g8-4Ku">
+                                                <rect key="frame" x="199.5" y="0.0" width="94" height="32"/>
+                                                <connections>
+                                                    <action selector="singleStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="fG8-Ld-4Wf"/>
+                                                </connections>
+                                            </stepper>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4h-pN-BAE">
+                                                <rect key="frame" x="303.5" y="0.0" width="10.5" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jMx-8J-zCK">
+                                        <rect key="frame" x="0.0" y="57" width="314" height="32"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="中級飼料" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3R-eE-zzT">
+                                                <rect key="frame" x="0.0" y="0.0" width="189.5" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="jmW-Wh-gey">
+                                                <rect key="frame" x="199.5" y="0.0" width="94" height="32"/>
+                                                <connections>
+                                                    <action selector="doubleStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="n0n-a3-rmt"/>
+                                                </connections>
+                                            </stepper>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYy-8m-3Rs">
+                                                <rect key="frame" x="303.5" y="0.0" width="10.5" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bFF-dF-myp">
+                                        <rect key="frame" x="0.0" y="114" width="314" height="32"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="頂級飼料" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjM-QQ-WTL">
+                                                <rect key="frame" x="0.0" y="0.0" width="189.5" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="1gF-Lc-FXK">
+                                                <rect key="frame" x="199.5" y="0.0" width="94" height="32"/>
+                                                <connections>
+                                                    <action selector="tripleStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="9SY-0U-2dx"/>
+                                                </connections>
+                                            </stepper>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hL7-DM-v67">
+                                                <rect key="frame" x="303.5" y="0.0" width="10.5" height="32"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quj-ti-Tvz">
+                                <rect key="frame" x="148.5" y="708" width="34" height="30"/>
+                                <state key="normal" title="Feed">
+                                    <color key="titleColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addExp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rov-u3-nIl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwe-UD-OQp">
+                                <rect key="frame" x="223.5" y="708" width="50" height="30"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T0d-Ll-YEN"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.91144511419999996" green="0.8499060705" blue="0.78730589660000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Quj-ti-Tvz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.8" id="3Ec-ys-Rsx"/>
+                            <constraint firstItem="Vwe-UD-OQp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.2" id="9G6-QJ-1fW"/>
+                            <constraint firstItem="mcE-Cj-iKP" firstAttribute="top" secondItem="YT4-a6-Spi" secondAttribute="bottom" constant="10" id="P6f-4H-qo5"/>
+                            <constraint firstItem="YT4-a6-Spi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="TQ3-1E-n0q"/>
+                            <constraint firstItem="Vwe-UD-OQp" firstAttribute="top" secondItem="51G-UL-Bgi" secondAttribute="bottom" constant="50" id="TT4-MU-cLC"/>
+                            <constraint firstItem="51G-UL-Bgi" firstAttribute="top" secondItem="mcE-Cj-iKP" secondAttribute="bottom" constant="50" id="X2f-90-Plv"/>
+                            <constraint firstItem="YT4-a6-Spi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cZ8-hY-dl6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="51G-UL-Bgi" secondAttribute="trailing" constant="50" id="cbO-4s-wCj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mcE-Cj-iKP" secondAttribute="bottom" constant="400" id="dCJ-AJ-BKi"/>
+                            <constraint firstItem="51G-UL-Bgi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="eeC-Al-ezG"/>
+                            <constraint firstItem="mcE-Cj-iKP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pyd-LP-QKT"/>
+                            <constraint firstItem="Quj-ti-Tvz" firstAttribute="top" secondItem="51G-UL-Bgi" secondAttribute="bottom" constant="50" id="s61-2T-JnB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="doubleNum" destination="oYy-8m-3Rs" id="BLA-XA-WZp"/>
+                        <outlet property="doubleOutlet" destination="jmW-Wh-gey" id="fjo-LL-hZn"/>
+                        <outlet property="egg" destination="mcE-Cj-iKP" id="6yd-Zf-i13"/>
+                        <outlet property="singleNum" destination="e4h-pN-BAE" id="xqE-Wi-QHD"/>
+                        <outlet property="singleOutlet" destination="nc2-g8-4Ku" id="l8d-ZQ-HCo"/>
+                        <outlet property="status" destination="YT4-a6-Spi" id="9gY-Js-4aw"/>
+                        <outlet property="tripleNum" destination="hL7-DM-v67" id="GzJ-EC-HcN"/>
+                        <outlet property="tripleOutlet" destination="1gF-Lc-FXK" id="zJW-eI-sja"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="89"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="egg" width="362" height="400"/>
+    </resources>
 </document>
