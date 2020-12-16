@@ -28,25 +28,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="51G-UL-Bgi">
-                                <rect key="frame" x="50" y="512" width="314" height="146"/>
+                                <rect key="frame" x="104" y="512" width="206.5" height="146"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dGi-kh-YKM">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="32"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" verticalHuggingPriority="253" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="752" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dGi-kh-YKM">
+                                        <rect key="frame" x="0.0" y="0.0" width="206.5" height="32"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="普通飼料" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gt-Z9-HXG">
-                                                <rect key="frame" x="0.0" y="0.0" width="189.5" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="82" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="nc2-g8-4Ku">
-                                                <rect key="frame" x="199.5" y="0.0" width="94" height="32"/>
+                                                <rect key="frame" x="92" y="0.0" width="94" height="32"/>
                                                 <connections>
                                                     <action selector="singleStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="fG8-Ld-4Wf"/>
                                                 </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4h-pN-BAE">
-                                                <rect key="frame" x="303.5" y="0.0" width="10.5" height="32"/>
+                                                <rect key="frame" x="196" y="0.0" width="10.5" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -54,22 +54,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jMx-8J-zCK">
-                                        <rect key="frame" x="0.0" y="57" width="314" height="32"/>
+                                        <rect key="frame" x="0.0" y="57" width="206.5" height="32"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="中級飼料" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3R-eE-zzT">
-                                                <rect key="frame" x="0.0" y="0.0" width="189.5" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="82" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="jmW-Wh-gey">
-                                                <rect key="frame" x="199.5" y="0.0" width="94" height="32"/>
+                                                <rect key="frame" x="92" y="0.0" width="94" height="32"/>
                                                 <connections>
                                                     <action selector="doubleStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="n0n-a3-rmt"/>
                                                 </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYy-8m-3Rs">
-                                                <rect key="frame" x="303.5" y="0.0" width="10.5" height="32"/>
+                                                <rect key="frame" x="196" y="0.0" width="10.5" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -77,22 +77,22 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bFF-dF-myp">
-                                        <rect key="frame" x="0.0" y="114" width="314" height="32"/>
+                                        <rect key="frame" x="0.0" y="114" width="206.5" height="32"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="頂級飼料" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjM-QQ-WTL">
-                                                <rect key="frame" x="0.0" y="0.0" width="189.5" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="82" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="9" translatesAutoresizingMaskIntoConstraints="NO" id="1gF-Lc-FXK">
-                                                <rect key="frame" x="199.5" y="0.0" width="94" height="32"/>
+                                                <rect key="frame" x="92" y="0.0" width="94" height="32"/>
                                                 <connections>
                                                     <action selector="tripleStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="9SY-0U-2dx"/>
                                                 </connections>
                                             </stepper>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hL7-DM-v67">
-                                                <rect key="frame" x="303.5" y="0.0" width="10.5" height="32"/>
+                                                <rect key="frame" x="196" y="0.0" width="10.5" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -130,11 +130,10 @@
                             <constraint firstItem="Vwe-UD-OQp" firstAttribute="top" secondItem="51G-UL-Bgi" secondAttribute="bottom" constant="50" id="TT4-MU-cLC"/>
                             <constraint firstItem="51G-UL-Bgi" firstAttribute="top" secondItem="mcE-Cj-iKP" secondAttribute="bottom" constant="50" id="X2f-90-Plv"/>
                             <constraint firstItem="YT4-a6-Spi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cZ8-hY-dl6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="51G-UL-Bgi" secondAttribute="trailing" constant="50" id="cbO-4s-wCj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mcE-Cj-iKP" secondAttribute="bottom" constant="400" id="dCJ-AJ-BKi"/>
-                            <constraint firstItem="51G-UL-Bgi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="eeC-Al-ezG"/>
                             <constraint firstItem="mcE-Cj-iKP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pyd-LP-QKT"/>
                             <constraint firstItem="Quj-ti-Tvz" firstAttribute="top" secondItem="51G-UL-Bgi" secondAttribute="bottom" constant="50" id="s61-2T-JnB"/>
+                            <constraint firstItem="51G-UL-Bgi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sWM-8N-U6W"/>
                         </constraints>
                     </view>
                     <connections>
